@@ -1,0 +1,55 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/tabs/tab2" text=""></ion-back-button>
+    </ion-buttons>
+
+    <ion-title>
+      CONCIENCIA FONÉTICA 
+    </ion-title>
+    
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+       <!--<img src="r.jpg" />-->  <h2> <b>EJERCICIO 2 DE 6  </b> </h2>
+       <p class="tex" >¿Qué quedaría si a la palabra “espirales”
+        le quitamos el 2º sonido, o el sonido (s)?
+        
+        </p>
+      </ion-col>
+      <ion-col>
+        <ion-badge *ngFor="let fallo of fallos">{{fallo}}</ion-badge>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <p class="palabra" id="palabra-adivinada-por-ahora">{{palabraAdivinadaPorAhora}}</p>
+      </ion-col>
+    </ion-row>
+    <ion-row class="bt"> 
+
+    
+     
+      <ion-col class="botones" id="botonera">
+        <ion-button *ngFor="let boton of botones" ion-button round outline
+                (click)="botonClicked(boton)"
+                [ngClass]="boton.estado">{{boton.letra}}</ion-button>
+      </ion-col>
+    </ion-row>
+
+
+
+
+
+  </ion-grid>
+<!--<div class="arrow"></div>-->
+
+
+ 
+</ion-content>

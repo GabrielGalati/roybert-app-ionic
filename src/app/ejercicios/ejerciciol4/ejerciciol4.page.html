@@ -1,0 +1,59 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/tabs/tab2" text=""></ion-back-button>
+    </ion-buttons>
+
+    <ion-title>
+      CONCIENCIA LÉXICA 
+    </ion-title>
+    
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+       <!--<img src="r.jpg" />-->  <h2> <b>EJERCICIO 4 DE 4   </b> </h2>
+       <p class="tex" >Selencione una frase de 8 palabras con el
+        binomio “ volar- noche”
+      </ion-col>
+      <ion-col>
+        <ion-badge *ngFor="let fallo of fallos">{{fallo}}</ion-badge>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <p class="palabra" id="palabra-adivinada-por-ahora">{{palabraAdivinadaPorAhora}}</p>
+      </ion-col>
+    </ion-row>
+    <ion-row class="bt"> 
+
+    
+     
+      <ion-col class="botones" id="botonera">
+        <ion-button ion-button round outline
+        (click)="botonClicked2()" >Soñe que pude volar alto en la noche</ion-button>
+
+<ion-button ion-button round outline
+        (click)="botonClicked1()">El avión dejo de volar y se cayo</ion-button>
+    
+    
+    <ion-button ion-button round outline
+        (click)="botonClicked3()">Las gallinas no vuelan de noche</ion-button>
+      </ion-col>
+   
+    </ion-row>
+
+
+
+
+  </ion-grid>
+<!--<div class="arrow"></div>-->
+
+
+ 
+</ion-content>

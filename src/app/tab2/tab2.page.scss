@@ -1,0 +1,61 @@
+ion-content ion-toolbar {
+  --background: translucent;
+
+  #palabra-adivinada-por-ahora {
+    text-align: center;
+    letter-spacing: 10px;
+    font-size: 24px;
+  }
+
+  #botonera {
+    text-align: center;
+  }
+
+  .boton-letra-acertada {
+    background-color: lightgreen;
+  }
+
+  .boton-letra-no-acertada {
+    background-color: lightcoral;
+  }
+
+  .boton-no-pulsado-aun {
+    background-color: white;
+  }
+
+}
+
+.bt{
+  justify-content:center;
+  margin-top: 20%;
+  margin-bottom: 10%;
+  border: 3px solid #66b3ff;
+  background-color: #d1d1e0;
+}
+.botones{
+  text-align: center;
+  padding: 1px;
+}
+
+.palabra{
+
+   text-align: center;
+
+}
+.tex{
+text-align: center;
+}
+
+.btn1{
+  
+  margin-top: 20%;
+  margin-bottom: 20%;
+}
+.btn2{
+  margin-top: 20%;
+  margin-bottom: 20%;
+}
+.btn3{
+  margin-top: 20%;
+  margin-bottom: 20%;
+}

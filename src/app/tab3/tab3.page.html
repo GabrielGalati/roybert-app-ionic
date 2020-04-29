@@ -1,0 +1,34 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Perfil
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+
+
+<ion-content class="auth-form" >
+  <ion-grid>
+    <ion-row>
+      <ion-col align-self-center>
+        <ion-button [routerLink]="['/registration']" expand="block" color="primary">Registrar</ion-button>
+
+        <span class="divider line one-line">or</span>
+
+        <!-- <span class="already">Already a user?</span> -->
+
+        <ion-button [routerLink]="['/login']" expand="block" color="danger">Loegar</ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
+
+<div *ngIf="isLoggedIn == true">
+<ion-content class="auth-form" *ngIf="x == Falsee">
+  <ion-grid>
+    <h1>logeado</h1>
+  </ion-grid>
+</ion-content>
+</div>

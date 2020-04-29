@@ -1,0 +1,7 @@
+{
+  "name": "approy",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

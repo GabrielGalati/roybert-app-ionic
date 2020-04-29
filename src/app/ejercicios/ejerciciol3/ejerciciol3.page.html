@@ -1,0 +1,59 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/tabs/tab2" text=""></ion-back-button>
+    </ion-buttons>
+
+    <ion-title>
+      CONCIENCIA LÉXICA 
+    </ion-title>
+    
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+       <!--<img src="r.jpg" />-->  <h2> <b>EJERCICIO 3 DE 4  </b> </h2>
+       <p class="tex" >
+        Qué quedaría si sustituimos la 4º palabra
+        de la oración ¨Hoy hace mucho calor en
+        la playa¨ por la palabra “sol”
+      </ion-col>
+      <ion-col>
+        <ion-badge *ngFor="let fallo of fallos">{{fallo}}</ion-badge>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <p class="palabra" id="palabra-adivinada-por-ahora">{{palabraAdivinadaPorAhora}}</p>
+      </ion-col>
+    </ion-row>
+    <ion-row class="bt"> 
+
+    
+     
+      <ion-col class="botones" id="botonera">
+        <ion-button ion-button round outline
+        (click)="botonClicked2()" >Hoy hace mucho sol en
+        la playa </ion-button>
+
+      <ion-button ion-button round outline
+        (click)="botonClicked1()">Hoy hace mucho calor 
+         en la playa</ion-button>
+      </ion-col>
+    </ion-row>
+
+
+
+
+
+  </ion-grid>
+<!--<div class="arrow"></div>-->
+
+
+ 
+</ion-content>
